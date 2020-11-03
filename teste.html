@@ -1,0 +1,30 @@
+<script>
+  alert("olá, sou um teste JavaScript");
+
+  var names = [
+    "Sean",
+    "Kyle",
+    "Emily",
+    "Nick",
+    "Cotter",
+    "Brian",
+    "Jeremy",
+    "Kimmy",
+    "Pat",
+    "Johnny",
+  ];
+
+  var arr1 = names.slice(); // copy array
+
+  arr1.sort(function () {
+    return 0.5 - Math.random();
+  }); // shuffle arrays
+
+  console.log(arr1.length);
+
+  for (i = 0; i < 3; i++) {
+    var name1 = arr1.pop(); // get the last value of arr1
+
+    console.log(name1);
+  }
+</script>
